@@ -20,16 +20,25 @@
     <meta property="og:type" content="website">
     <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
-    <title>できた！ログ</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>できた！ログ_目標</title>
+    <link rel="stylesheet" href="css/form.css">
   </head>
   <body>
-    <div id="contentWrapper">
-      <h1>週3回料理する</h1>
-      <div class="robo">
-        <h2>今日もおつかれさま</h2><img src="img/robo.png" alt="">
-      </div>
+    <div class="contentTtl"> 
+      <h1>目標を決めよう！</h1>
+      <h2>今週は何をがんばる？</h2>
+      <p>一言で簡単に書いてみよう</p>
+      <input type="text">
+      <p>カテゴリーを選ぼう</p>
+      <select id="category" list="list" name="category"> 
+        <option value="study">勉強 </option>
+        <option value="study">運動 </option>
+        <option value="study">料理 </option>
+      </select>
+      <h2>1週間で何回する？</h2>
+      <input type="number" max="6" min="1" value="3">
     </div>
+    <button>今週もがんばろう</button>
     <footer>
       <ul> 
         <li><a href="index.html"> <img src="img/home.svg" alt="ホーム">

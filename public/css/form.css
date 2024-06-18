@@ -288,38 +288,73 @@ progress {
 }
 
 footer {
-  height: 6rem;
+  height: 8rem;
   width: 100%;
   position: fixed;
   bottom: 0;
   background-color: rgb(142, 172, 202);
+  border-radius: 20px 20px 0 0;
+}
+footer::before {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100px;
+  background: #8EACCA;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1000;
 }
 footer ul {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 footer ul li {
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  font-size: 1.4;
+  list-style: none;
+  text-align: center;
+  font-size: 1.6rem;
   color: #fff;
-  display: flex;
 }
-footer ul li img {
-  width: 70%;
+footer ul li:hover {
+  scale: 1.1;
+  transition: 0.4s;
+}
+footer ul .from {
+  margin-top: 3rem;
+}
+footer ul .from img {
+  position: absolute;
+  width: 12%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 body {
   width: 100%;
-  color: #333;
-  background-color: #F7F3E7;
+  height: 100%;
   overflow: hidden;
+  color: #333;
+  background: url(..//img/bg.png) no-repeat center center;
+  background-size: cover;
 }
 
 .contentTtl {
-  margin: 10rem 4rem 0;
+  margin: 12rem 4rem 0;
+}
+.contentTtl h1 {
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2.4rem;
 }
 .contentTtl h2 {
   display: flex;
@@ -335,14 +370,14 @@ body {
   background: #8EACCA;
 }
 .contentTtl p {
-  padding: 2rem 0 2rem 1rem;
+  margin: 2.4rem 0 2rem 1rem;
   font-size: 1.6rem;
 }
 .contentTtl p::before {
   content: "・";
 }
 .contentTtl input, .contentTtl select, .contentTtl #details {
-  margin-left: 2.4rem;
+  margin: 0.8rem 0 0 2.4rem;
   padding: 1rem;
   font-size: 1.2rem;
   border-radius: 10px;
@@ -353,14 +388,12 @@ body {
   font-size: 1.4rem;
 }
 button {
+  display: block;
+  margin: 2.2rem auto;
   padding: 0.5rem 2rem;
   font-size: 2rem;
   color: #FFF;
-  font-family: "Kiwi Maru";
   border-radius: 10px;
   background: #8EACCA;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  position: absolute;
-  bottom: 15%;
-  left: 30%;
 }
