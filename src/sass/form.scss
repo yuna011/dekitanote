@@ -1,0 +1,66 @@
+@use 'sass:color';
+@use 'asset' as *;
+@use 'footer' as footer;
+
+body{
+    width: 100%;
+    color: $fontColor;
+    background-color: $bgColor;
+    overflow: hidden;
+    }
+    
+    .contentTtl{
+    margin: 10rem 4rem 0;
+    h2{
+        display: flex;
+        align-items: center;
+        font-size: 2.4rem;
+        &::before{
+            margin-right: 1rem;
+            content: "";
+            display: block;
+            width: 4px;
+            height: 2.6rem;
+            background: $mainColor;
+        }
+    }
+    p{
+        padding: 2rem 0 2rem 1rem;
+        font-size: 1.6rem;
+        &::before{
+            content: "・";
+        }
+    }
+
+    %inputStyle{
+        margin-left: 2.4rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        background: rgba(178, 189, 200, 0.20);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    input,select,#details{
+        @extend %inputStyle;
+    }
+    select{
+        font-size: 1.4rem;
+    }
+    #details{
+
+    }
+
+}
+
+button{
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    color: #FFF;
+    font-family: "Kiwi Maru";
+    border-radius: 10px;
+    background: $mainColor;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+}

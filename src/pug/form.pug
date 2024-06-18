@@ -1,0 +1,26 @@
+doctype html
+html(lang="ja")
+    head
+        include _head.pug 
+        title できた！ログ_登録
+        link(rel="stylesheet", href="css/form.css")
+    body
+        .contentTtl 
+            h2 今日は 何ができたかな？
+            p 一言で簡単に書いてみよう
+            input(type="text")
+            p カテゴリーを選ぼう
+            select#category(list="list",name="category") 
+                option(value="study") 勉強 
+                option(value="study") 運動 
+                option(value="study") 料理 
+            p 詳しく書いてみよう
+            textarea#details(name="details" rows="8" cols="40") 
+            //- input(type="textarea",).details
+
+
+        button できた！
+
+        include _footer.pug
+
+

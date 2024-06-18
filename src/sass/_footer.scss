@@ -1,0 +1,23 @@
+footer{
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(142, 172, 202, 1);
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            font-size: 1.4;
+            color: #fff;
+            display: flex;
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
