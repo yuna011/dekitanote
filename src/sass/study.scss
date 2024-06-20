@@ -14,14 +14,13 @@ body{
     line-height: 6rem;
     h1{
         font-size: 2.4rem;
-        text-align: center;
     }
-    ul{
-        line-height: 6.4rem;
-        margin-left: 2rem;
-        font-size: 2.4rem;
-        }
-        a{
-            color: $fontColor;
-        }
+}
+.category{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    p{
+        font-size: 1.4rem;
+    }
 }
