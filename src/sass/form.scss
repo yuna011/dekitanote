@@ -1,18 +1,16 @@
 @use 'sass:color';
-@use 'asset' as *;
+@use 'asset' as ast;
+@use 'extend';
 @use 'footer' as footer;
 
 body{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    color: $fontColor;
+    @extend %bodyBase;
     background: url(..//img/bg.png) no-repeat center center;
     background-size: cover;
 }
     
 .contentTtl{
-    margin: 12rem 4rem 0;
+    margin: 4rem 4rem 0;
     h1{
         // margin-bottom: 1rem;
         line-height: 5rem;
@@ -29,8 +27,11 @@ body{
             display: block;
             width: 4px;
             height: 2.6rem;
-            background: $mainColor;
+            background: ast.$mainColor;
         }
+    }
+    .num{
+        margin: 2.4rem 0 1.6rem;
     }
     p{
         margin: 2.4rem 0 2rem 1rem;
@@ -40,33 +41,14 @@ body{
         }
     }
 
-    %inputStyle{
-        margin: 0.8rem 0 0 2.4rem;
-        padding: 1rem;
-        font-size: 1.2rem;
-        border-radius: 10px;
-        background: rgba(178, 189, 200, 0.20);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
     input,select,#details{
         @extend %inputStyle;
     }
     select{
         font-size: 1.4rem;
     }
-    #details{
-
-    }
-
 }
 
 button{
-    display: block;
-    margin: 2.2rem auto;
-    padding: 0.5rem 2rem;
-    font-size: 2rem;
-    color: #FFF;
-    border-radius: 10px;
-    background: $mainColor;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    @extend %btn;
 }

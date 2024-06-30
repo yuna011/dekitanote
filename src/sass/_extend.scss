@@ -1,0 +1,48 @@
+@use 'sass:color';
+@use 'asset' as ast;
+
+%bodyBase{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: ast.$fontColor;
+}
+
+%comment{
+    margin: 0 auto; 
+    width: 30rem;
+    height: 8rem;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 8rem;
+    color: ast.$fontColor;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+%inputStyle{
+    margin: 0.8rem 0 0 2.4rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: rgba(178, 189, 200, 0.20);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+%btn{
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #FFF;
+    border-radius: 10px;
+    background: ast.$mainColor;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    &:hover{
+        scale: 0.9;
+    }
+
+}
