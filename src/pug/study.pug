@@ -6,10 +6,49 @@ html(lang="ja")
         link(rel="stylesheet", href="css/study.css")
     body
         .contentWrap 
+            .btn
+                p 
+                    a(href="logu.html") <i class="fa-solid fa-chevron-up"></i>
+                p 
+                    a(href="studyText.html") <i class="fa-solid fa-chevron-up"></i>
             .category 
                 h1 勉強
                 p できた!の数:20
 
+
+            #chart
+                table.charts-css.bar.show-labels
+                    caption Single Dataset Table
+                        thead
+                            tr
+                            th(scope="col") Month
+                            th(scope="col") Progress
+                        tbody
+                            tr
+                                th(scope="row") Jan
+                                td(style="--size:calc(30 / 100)") 
+                                    span.data 30
+                            tr
+                                th(scope="row") Feb
+                                td(style="--size:calc(50 / 100)") 
+                                    span.data 50
+                            tr
+                                th(scope="row") Mar
+                                td(style="--size:calc(80 / 100)") 
+                                    span.data 80
+                            tr
+                                th(scope="row") Apr
+                                td(style="--size:calc(100 / 100)") 
+                                    span.data 100
+                            tr
+                                th(scope="row") May
+                                td(style="--size:calc(65 / 100)") 
+                                    span.data 65
+                            tr
+                                th(scope="row") Jun
+                                td(style="--size:calc(45 / 100)") 
+                                    span.data 45
+                    
         include _footer.pug
 
 

@@ -294,6 +294,11 @@ body {
   color: #333;
 }
 
+.btn p {
+  font-size: 2rem;
+  transform: rotate(-90deg);
+}
+
 footer {
   height: 8rem;
   width: 100%;
@@ -350,6 +355,9 @@ body {
   background: url(..//img/bg.png) no-repeat center center;
   background-size: cover;
 }
+body p {
+  font-size: 2.4rem;
+}
 
 .contentWrap {
   margin: 12rem 4rem 0;
@@ -366,4 +374,39 @@ body {
 }
 .category p {
   font-size: 1.4rem;
+}
+
+.contentText {
+  padding-top: 4.2rem;
+}
+.contentText h2 {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+}
+
+#chart {
+  width: 100%;
+  margin-top: 3rem;
+  background: #CBDCDC;
+}
+#chart tbody tr {
+  padding: 5px;
+}
+#chart tbody tr th {
+  font-size: 2rem;
+}
+#chart tbody tr td {
+  min-height: 5rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn a {
+  color: #333;
+}
+.btn p:last-child {
+  transform: rotate(90deg);
 }

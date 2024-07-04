@@ -1,4 +1,4 @@
-@use 'asset' as *;
+@use 'asset' as ast;
 @use 'extend';
 @use 'footer' as footer;
 
@@ -6,6 +6,9 @@ body{
     @extend %bodyBase;
     background: url(..//img/bg.png) no-repeat center center;
     background-size: cover;
+    p{
+        font-size: 2.4rem;
+    }
 }
 .contentWrap{
     margin: 12rem 4rem 0;
@@ -20,5 +23,43 @@ body{
     align-items: baseline;
     p{
         font-size: 1.4rem;
+    }
+}
+.contentText{
+    padding-top: 4.2rem;
+    h2{
+        margin-top: 1rem;
+        font-size: 2.4rem;
+    }
+}
+
+#chart {
+    width: 100%;
+    margin-top: 3rem;
+    background: ast.$subColor;
+    tbody{
+        tr{
+            padding: 5px;
+            th{
+                font-size: 2rem;
+            }
+            td{
+                min-height: 5rem;
+            }
+        }
+    }
+    }
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: ast.$fontColor
+    }
+    p{
+        @extend %returnBtn;
+        &:last-child{
+            transform: rotate(90deg);
+        }
     }
 }

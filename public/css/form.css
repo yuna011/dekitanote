@@ -375,7 +375,7 @@ body {
 }
 
 .contentTtl {
-  margin: 4rem 4rem 0;
+  margin: 0 4rem 0;
 }
 .contentTtl h1 {
   line-height: 5rem;
@@ -383,6 +383,7 @@ body {
   font-size: 2.4rem;
 }
 .contentTtl h2 {
+  margin-top: 13rem;
   display: flex;
   align-items: center;
   font-size: 2.4rem;
@@ -401,10 +402,15 @@ body {
 .contentTtl p {
   margin: 2.4rem 0 2rem 1rem;
   font-size: 1.6rem;
+  line-height: 3.5rem;
 }
 .contentTtl p::before {
   content: "・";
 }
 .contentTtl select {
   font-size: 1.4rem;
+}
+
+button {
+  margin-top: 2rem;
 }

@@ -352,8 +352,7 @@ body {
 }
 
 .contentWrap {
-  margin: 4rem 4rem 0;
-  line-height: 4rem;
+  margin: 7rem 4rem 0;
 }
 .contentWrap h1 {
   font-size: 2.4rem;
@@ -363,6 +362,13 @@ body {
   line-height: 5.6rem;
   margin-left: 2rem;
   font-size: 2.4rem;
+}
+.contentWrap li {
+  list-style: none;
+  padding-top: 1rem;
+}
+.contentWrap i {
+  padding-right: 2.5rem;
 }
 .contentWrap a {
   color: #333;
