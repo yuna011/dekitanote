@@ -360,35 +360,33 @@ a {
 }
 
 body {
-  background-color: #435262;
+  background: url("..//img/bg_blue.png") no-repeat center center;
+  background-size: cover;
 }
 
 #contentWrapper {
-  margin-top: 8rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  margin-top: 10rem;
 }
 #contentWrapper h1 {
-  letter-spacing: 0.5rem;
   font-size: 2.4rem;
   color: #fff;
 }
 #contentWrapper h1::before {
   content: url("..//img/flag.svg");
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 #contentWrapper h1 span {
-  letter-spacing: 1rem;
   font-size: 4rem;
 }
-
-.comment {
-  margin-top: 7rem;
+#contentWrapper h1 #text {
+  padding: 0 1rem 0 5px;
+  font-size: 2.4rem;
 }
 
-.robo {
-  position: relative;
-  margin-top: 2rem;
-}
-.robo img {
-  width: 100%;
+.robot img {
+  width: 35rem;
 }

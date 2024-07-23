@@ -6,12 +6,17 @@ html(lang="ja")
         link(rel="stylesheet", href="css/index.css")
     body
         #contentWrapper
-            h1 週<span>3</span>回料理する
+            h1 週 
+                span(id="displayNum") 
+                span(id="text") 回
+                span(id="displayText")            
+            
             h2.comment 今日もおつかれさま
-            .robo
-
-                img(src="img/robo.gif", alt="")
+            .robot
+                img(src="img/robotImg/wavebands.gif", alt="")
 
         include _footer.pug
+        script(src="js/output.js")
+
 
 

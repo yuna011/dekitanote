@@ -9,20 +9,24 @@ html(lang="ja")
             h1 目標を決めよう！
             h2 今週は何をがんばる？
             p 一言で簡単に書いてみよう
-            input(type="text")
-            p カテゴリーを選ぼう
-            select#category(list="list",name="category") 
-                option(value="study") 勉強 
-                option(value="study") 運動 
-                option(value="study") 料理 
-
-            h2.num 1週間で何回する？
-            input(type="number" max="6" min="1" value="3")
-
-
-
-        button 今週もがんばろう
+            form
+                label(for="text")
+                input(type="text" id="text" name="text")
+                
+                p カテゴリーを選ぼう:
+                select(id="category" name="category")
+                    option(value="study") 勉強
+                    option(value="exercise") 運動
+                    option(value="cooking") 料理
+                
+                h2 1週間で何回する？
+                label(for="num")
+                input(type="number" id="num" name="num" max="6" min="1" value="3")
+                
+                a(href="index.html")
+                    button(type="button" onclick="saveData()") 今週もがんばろう
 
         include _footer.pug
-
+        script(src="js/input.js")
+            
 

@@ -33,26 +33,31 @@
       <h1>目標を決めよう！</h1>
       <h2>今週は何をがんばる？</h2>
       <p>一言で簡単に書いてみよう</p>
-      <input type="text">
-      <p>カテゴリーを選ぼう</p>
-      <select id="category" list="list" name="category"> 
-        <option value="study">勉強 </option>
-        <option value="study">運動 </option>
-        <option value="study">料理 </option>
-      </select>
-      <h2 class="num">1週間で何回する？</h2>
-      <input type="number" max="6" min="1" value="3">
+      <form>
+        <label for="text"></label>
+        <input type="text" id="text" name="text">
+        <p>カテゴリーを選ぼう:</p>
+        <select id="category" name="category">
+          <option value="study">勉強</option>
+          <option value="exercise">運動</option>
+          <option value="cooking">料理</option>
+        </select>
+        <h2>1週間で何回する？</h2>
+        <label for="num"></label>
+        <input type="number" id="num" name="num" max="6" min="1" value="3"><a href="index.html">
+          <button type="button" onclick="saveData()">今週もがんばろう</button></a>
+      </form>
     </div>
-    <button>今週もがんばろう</button>
     <footer>
       <ul> 
         <li><a href="index.html"> <img src="img/home.svg" alt="ホーム">
             <p>ホーム</p></a></li>
         <li class="from"> <a href="form.html"> <img src="img/dekita.svg" alt="登録">
             <p>できた！</p></a></li>
-        <li> <a href="logu.html"> <img src="img/logu.svg" alt="記録">
+        <li> <a href="log.html"> <img src="img/log.svg" alt="記録">
             <p>記録</p></a></li>
       </ul>
     </footer>
+    <script src="js/input.js"></script>
   </body>
 </html>
