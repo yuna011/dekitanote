@@ -294,33 +294,6 @@ body {
   color: #333;
 }
 
-.comment {
-  margin: 0 auto;
-  width: 30rem;
-  height: 8rem;
-  text-align: center;
-  font-size: 2.4rem;
-  line-height: 8rem;
-  color: #333;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.86);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.return {
-  display: block;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  color: #FFF;
-  border-radius: 10px;
-  background: #8eacca;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.return:hover {
-  scale: 0.9;
-}
-
 footer {
   height: 8rem;
   width: 100%;
@@ -374,22 +347,29 @@ a {
 }
 
 body {
-  background-color: #435262;
+  background: url(..//img/bg.png) no-repeat center center;
+  background-size: cover;
 }
 
-.comment {
-  margin-top: 10rem;
+.contentWrap {
+  margin: 7rem 4rem 0;
 }
-
-.robo {
-  position: relative;
-  margin-top: 4rem;
+.contentWrap h1 {
+  font-size: 2.4rem;
+  text-align: center;
 }
-.robo img {
-  width: 100%;
+.contentWrap ul {
+  line-height: 5.6rem;
+  margin-left: 2rem;
+  font-size: 2.4rem;
 }
-
-.return {
-  width: -moz-fit-content;
-  width: fit-content;
+.contentWrap li {
+  list-style: none;
+  padding-top: 1rem;
+}
+.contentWrap i {
+  padding-right: 2.5rem;
+}
+.contentWrap a {
+  color: #333;
 }

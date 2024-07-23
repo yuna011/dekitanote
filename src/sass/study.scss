@@ -1,64 +1,67 @@
-@use 'asset' as ast;
-@use 'extend';
-@use 'footer' as footer;
+@use "asset" as ast;
+@use "extend";
+@use "footer" as footer;
 
-body{
+body {
     @extend %bodyBase;
     background: url(..//img/bg.png) no-repeat center center;
     background-size: cover;
-    p{
+    p {
         font-size: 2.4rem;
     }
 }
-.contentWrap{
+.contentWrap {
     margin: 12rem 4rem 0;
     line-height: 6rem;
-    h1{
+    h1 {
         font-size: 2.4rem;
     }
 }
-.category{
+.category {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    p{
+    p {
         font-size: 1.4rem;
     }
 }
-.contentText{
-    padding-top: 4.2rem;
-    h2{
+.contentText {
+    padding-top: 2.5rem;
+    h2 {
         margin-top: 1rem;
         font-size: 2.4rem;
     }
 }
 
 #chart {
-    width: 100%;
     margin-top: 3rem;
+    padding: 2rem;
     background: ast.$subColor;
-    tbody{
-        tr{
+    tbody {
+        width: 90%;
+        margin: 0 auto;
+        tr {
             padding: 5px;
-            th{
+            th {
+                gap: 1rem;
                 font-size: 2rem;
             }
-            td{
+            td {
                 min-height: 5rem;
             }
         }
     }
-    }
-.btn{
+}
+.btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a{
-        color: ast.$fontColor
+    a {
+        color: ast.$fontColor;
     }
-    p{
+    p {
         @extend %returnBtn;
-        &:last-child{
+        &:last-child {
             transform: rotate(90deg);
         }
     }
