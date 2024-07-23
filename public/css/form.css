@@ -294,7 +294,9 @@ body {
   color: #333;
 }
 
-.contentTtl input, .contentTtl select, .contentTtl #details {
+.contentTtl input,
+.contentTtl select,
+.contentTtl #details {
   margin: 0.8rem 0 0 2.4rem;
   padding: 1rem;
   font-size: 1.2rem;
@@ -310,7 +312,7 @@ button {
   font-size: 2rem;
   color: #FFF;
   border-radius: 10px;
-  background: #8EACCA;
+  background: #8eacca;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 button:hover {
@@ -375,7 +377,7 @@ body {
 }
 
 .contentTtl {
-  margin: 0 4rem 0;
+  margin: 6rem 4rem 0;
 }
 .contentTtl h1 {
   line-height: 5rem;
@@ -383,7 +385,7 @@ body {
   font-size: 2.4rem;
 }
 .contentTtl h2 {
-  margin-top: 13rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   font-size: 2.4rem;
@@ -394,7 +396,7 @@ body {
   display: block;
   width: 4px;
   height: 2.6rem;
-  background: #8EACCA;
+  background: #8eacca;
 }
 .contentTtl .num {
   margin: 2.4rem 0 1.6rem;
@@ -402,7 +404,7 @@ body {
 .contentTtl p {
   margin: 2.4rem 0 2rem 1rem;
   font-size: 1.6rem;
-  line-height: 3.5rem;
+  line-height: 2rem;
 }
 .contentTtl p::before {
   content: "・";
@@ -412,5 +414,5 @@ body {
 }
 
 button {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }

@@ -1,50 +1,40 @@
-@use 'sass:color';
-@use 'asset' as *;
-@use 'extend' as ext;
-@use 'footer' as footer;
+@use "sass:color";
+@use "asset" as *;
+@use "extend" as ext;
+@use "footer" as footer;
 
-body{
+body {
     @extend %bodyBase;
-    background-color: #435262;
+    background: url("..//img/bg_blue.png") no-repeat center center;
+    background-size: cover;
 }
-#contentWrapper{
-    margin-top: 8rem;
+#contentWrapper {
     text-align: center;
-    // &::after{
-    //     content: "";
-    //     z-index: -1000;
-    //     position: absolute;
-    //     left:  -8%;
-    //     bottom: -50%;
-    //     border-radius: 500px;
-    //     width: 450px;
-    //     height: 200px;
-    //     background: $subColor;
-    // }
-
-
-    h1{
-        letter-spacing: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    margin-top: 10rem;
+    h1 {
         font-size: 2.4rem;
         color: #fff;
-        &::before{
+        &::before {
             content: url("..//img/flag.svg");
-            margin-right: 2rem;
+            margin-right: 1rem;
         }
-        span{
-            letter-spacing: 1rem;
+        span {
             font-size: 4rem;
+        }
+        #text {
+            padding: 0 1rem 0 5px;
+            font-size: 2.4rem;
         }
     }
 }
-.comment{
+.comment {
     @extend %comment;
-    margin-top: 7rem;
 }
-.robo{
-    position: relative;
-    margin-top: 2rem;
-    img{
-        width: 100%;
+.robot {
+    img {
+        width: 35rem;
     }
 }
