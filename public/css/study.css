@@ -370,7 +370,15 @@ body p {
 .category {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+}
+.category .ttl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.category .ttl i {
+  font-size: 2.4rem;
 }
 .category p {
   font-size: 1.4rem;
@@ -381,7 +389,14 @@ body p {
 }
 .contentText h2 {
   margin-top: 1rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
+}
+.contentText p {
+  font-size: 1.4rem;
+}
+
+#displayContainer p {
+  font-size: 1.4rem;
 }
 
 #chart {

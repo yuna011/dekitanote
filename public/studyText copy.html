@@ -25,28 +25,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>できた！ノート_登録</title>
-    <link rel="stylesheet" href="css/form.css">
+    <title>できた！ログ_勉強</title>
+    <link rel="stylesheet" href="css/study.css">
   </head>
   <body>
-    <div class="contentTtl"> 
-      <h2>今日は 何ができたかな？</h2>
-      <p>一言で簡単に書いてみよう</p>
-      <from> 
-        <label for="title"></label>
-        <input type="text" id="title" name="title" placeholder="例: 本を読んだ">
-        <p>カテゴリーを選ぼう</p>
-        <label for="category"> </label>
-        <select id="category" list="list" name="category"> 
-          <option value="study">勉強 </option>
-          <option value="study">運動 </option>
-          <option value="study">料理 </option>
-        </select>
-        <p>詳しく書いてみよう</p>
-        <label for="details"> </label>
-        <input type="text" id="details" name="details" placeholder="例: 本を読んだ">
-      </from><a href="comp.html"> 
-        <button type="button" onclick="saveData()">できた！</button></a>
+    <div class="contentWrap"> 
+      <div class="btn">
+        <p> <a href="study.html"><i class="fa-solid fa-chevron-up"></i></a></p>
+        <p> <a href="log.html"><i class="fa-solid fa-chevron-up"></i></a></p>
+      </div>
+      <div class="category"> 
+        <div class="ttl"> <i class="fa-solid fa-pen"></i>
+          <h1>勉強</h1>
+        </div>
+        <p>できた!の数:20</p>
+      </div>
+      <div class="contentText"> 
+        <h2>5月16日</h2>
+        <p>数1の終わらせた</p>
+        <h2>5月17日</h2>
+        <p>英語の翻訳した</p>
+      </div>
+      <div id="displayContainer"></div>
     </div>
     <footer>
       <ul> 
@@ -58,6 +58,6 @@
             <p>記録</p></a></li>
       </ul>
     </footer>
-    <script src="js/from.js"></script>
+    <script src="js/study.js"></script>
   </body>
 </html>

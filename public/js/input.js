@@ -1,3 +1,4 @@
+// 入力した目標を保存
 function saveData() {
     const num = document.getElementById("num").value;
     const text = document.getElementById("text").value;

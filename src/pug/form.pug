@@ -8,20 +8,24 @@ html(lang="ja")
         .contentTtl 
             h2 今日は 何ができたかな？
             p 一言で簡単に書いてみよう
-            input(type="text")
-            p カテゴリーを選ぼう
-            select#category(list="list",name="category") 
-                option(value="study") 勉強 
-                option(value="study") 運動 
-                option(value="study") 料理 
-            p 詳しく書いてみよう
-            textarea#details(name="details" rows="12" cols="35") 
-            //- input(type="textarea",).details
+            from 
+                label(for="title")
+                input(type="text" id="title" name="title" placeholder="例: 本を読んだ")
+                p カテゴリーを選ぼう
+                label(for="category") 
+                select#category(list="list",name="category") 
+                    option(value="study") 勉強 
+                    option(value="study") 運動 
+                    option(value="study") 料理 
+                p 詳しく書いてみよう
+                label(for="details") 
+                input(type="text" id="details" name="details" placeholder="例: 本を読んだ")
 
-        button
-            a(href="comp.html")  できた！
+        
+            a(href="comp.html") 
+                button(type="button" onclick="saveData()") できた！
 
         include _footer.pug
-        script 
+        script(src="js/from.js")
             
 

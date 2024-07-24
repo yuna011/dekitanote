@@ -1,24 +1,24 @@
-@use 'sass:color';
-@use 'asset' as ast;
-@use 'extend';
-@use 'footer' as footer;
+@use "sass:color";
+@use "asset" as ast;
+@use "extend";
+@use "footer" as footer;
 
-body{
+body {
     @extend %bodyBase;
     background-color: #435262;
 }
-.comment{
+.comment {
     @extend %comment;
     margin-top: 10rem;
 }
-.robo{
+.robot {
     position: relative;
     margin-top: 4rem;
-    img{
+    img {
         width: 100%;
     }
 }
-.return{
+.return {
     @extend %btn;
-    width: fit-content;    
+    width: fit-content;
 }
