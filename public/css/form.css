@@ -294,6 +294,17 @@ body {
   color: #333;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .contentTtl input,
 .contentTtl select,
 .contentTtl #details {
@@ -310,7 +321,7 @@ button {
   margin: 0 auto;
   padding: 1rem 2rem;
   font-size: 2rem;
-  color: #FFF;
+  color: #fff;
   border-radius: 10px;
   background: #8eacca;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -369,6 +380,10 @@ footer ul .from img {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.device-header {
+  background-color: #cbdcdc;
 }
 
 body {

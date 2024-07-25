@@ -34,17 +34,21 @@
       <p>一言で簡単に書いてみよう</p>
       <from> 
         <label for="title"></label>
-        <input type="text" id="title" name="title" placeholder="例: 本を読んだ">
+        <input type="text" id="title" name="title" placeholder="例: 晩御飯作った">
         <p>カテゴリーを選ぼう</p>
         <label for="category"> </label>
         <select id="category" list="list" name="category"> 
           <option value="study">勉強 </option>
-          <option value="study">運動 </option>
+          <option value="diet">ダイエット </option>
+          <option value="sports">運動</option>
+          <option value="sleep">睡眠</option>
+          <option value="deposit">貯金 </option>
+          <option value="reading">読書 </option>
           <option value="study">料理 </option>
         </select>
         <p>詳しく書いてみよう</p>
         <label for="details"> </label>
-        <input type="text" id="details" name="details" placeholder="例: 本を読んだ">
+        <input type="text" id="details" name="details" placeholder="例: オムライス作った。美味しかった">
       </from><a href="comp.html"> 
         <button type="button" onclick="saveData()">できた！</button></a>
     </div>

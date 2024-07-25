@@ -294,6 +294,17 @@ body {
   color: #333;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .btn p {
   font-size: 2rem;
   transform: rotate(-90deg);

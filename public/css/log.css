@@ -294,6 +294,17 @@ body {
   color: #333;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
 footer {
   height: 8rem;
   width: 100%;

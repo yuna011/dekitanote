@@ -10,16 +10,20 @@ html(lang="ja")
             p 一言で簡単に書いてみよう
             from 
                 label(for="title")
-                input(type="text" id="title" name="title" placeholder="例: 本を読んだ")
+                input(type="text" id="title" name="title" placeholder="例: 晩御飯作った")
                 p カテゴリーを選ぼう
                 label(for="category") 
                 select#category(list="list",name="category") 
                     option(value="study") 勉強 
-                    option(value="study") 運動 
+                    option(value="diet") ダイエット 
+                    option(value="sports") 運動
+                    option(value="sleep") 睡眠
+                    option(value="deposit") 貯金 
+                    option(value="reading") 読書 
                     option(value="study") 料理 
                 p 詳しく書いてみよう
                 label(for="details") 
-                input(type="text" id="details" name="details" placeholder="例: 本を読んだ")
+                input(type="text" id="details" name="details" placeholder="例: オムライス作った。美味しかった")
 
         
             a(href="comp.html") 
